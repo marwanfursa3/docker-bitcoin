@@ -11,7 +11,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t marwan1408/docker-testt:latest .'
+				sh 'docker build -t marwan1408/docker-testtt:latest .'
 			}
 		}
 
