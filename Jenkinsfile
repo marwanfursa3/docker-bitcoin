@@ -9,7 +9,7 @@ pipeline{
 	stages {
 
 		stage('Build') {
-
+                                sh'sudo usermod -a -G docker jenkins'
 			steps {
 				sh 'docker build -t marwan1408/docker-testtt:latest .'
 			}
