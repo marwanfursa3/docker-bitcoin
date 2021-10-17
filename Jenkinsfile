@@ -12,13 +12,13 @@ pipeline{
                                    git branch: 'master', url:'https://github.com/marwanfursa3/docker-bitcoin.git'
                    }
 		}
-                stage('clone') {
+              //  stage('clone') {
                   
-			steps {
+		//	steps {
 				
-			 sh'sudo usermod -a -G docker jenkins'  
-			}
-		}
+		//	 sh'sudo usermod -a -G docker jenkins'  
+		//	}
+		//}
 		stage('Build') {
                       
 			steps {
