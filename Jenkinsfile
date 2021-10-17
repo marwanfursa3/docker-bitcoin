@@ -7,7 +7,12 @@ pipeline{
 	}
 
 	stages {
-                stage('Build') {
+		stage('Cloning Git') {
+                            steps {
+                                   git branch: 'master', url:'https://github.com/marwanfursa3/docker-bitcoin.git'
+                   }
+		}
+                stage('clone') {
                   
 			steps {
 				
