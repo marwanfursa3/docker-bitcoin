@@ -3,6 +3,6 @@ FROM python
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY bitcoin.py .
+COPY ma.py .
 
-CMD ["python","bitcoin.py"]                     
+CMD ["python","ma.py"]                     
