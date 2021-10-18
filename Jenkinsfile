@@ -23,7 +23,7 @@ pipeline{
                       
 			steps {
 				
-				sh 'sudo docker build -t marwan1408/docker-testtt:latest .'
+				sh 'docker build -t marwan1408/docker-testtt:latest .'
 			}
 		}
 
