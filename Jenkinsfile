@@ -23,7 +23,7 @@ pipeline{
                       
 			steps {
 				
-				sh 'docker build -t marwan1408/docker-testtt:latest .'
+				sh 'docker build -t marwan1408/docker9 .'
 			}
 		}
 
@@ -37,7 +37,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push marwan1408/docker-testt:latest'
+				sh 'docker push marwan1408/docker9'
 			}
 		}
 	}
